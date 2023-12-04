@@ -1,0 +1,938 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/nzS8Krt/blog6.jpg",
+        "title": "Web Development Bootcamp",
+        "price": 99.99,
+        "rating": 4.8,
+        "description": "The Web Development Bootcamp immerses participants in HTML, CSS, JavaScript, and frameworks like React or Angular. With hands-on projects, it hones skills in front-end, back-end, and database management, preparing individuals for a dynamic web development career.",
+        "number_of_lessons": 10,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Web Development"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "HTML and CSS Basics"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "JavaScript Fundamentals"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Responsive Web Design"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Backend Development with Node.js"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Database Management with MongoDB"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "API Development"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Deployment and Hosting"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Security and Best Practices"
+            },
+            {
+                "lesson_id": 10,
+                "lesson_title": "Project Showcase"
+            }
+        ],
+        "number_of_reviews": 3,
+        "total_lesson_duration": 18
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/s27Gbh4/blog3.jpg",
+        "title": "Data Science Masterclass",
+        "price": 129.99,
+        "rating": 4.7,
+        "description": "The Data Science Masterclass provides comprehensive training in statistical analysis, machine learning, and data visualization. Covering Python, R, and essential tools, it equips learners with the skills needed for impactful data-driven decision-making.",
+        "number_of_lessons": 12,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Data Science"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Data Analysis with Python"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Machine Learning Fundamentals"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Deep Learning and Neural Networks"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Data Visualization"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Big Data and Hadoop"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Natural Language Processing"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "AI in Healthcare"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Capstone Project"
+            },
+            {
+                "lesson_id": 10,
+                "lesson_title": "Job Placement Assistance"
+            }
+        ],
+        "number_of_reviews": 5,
+        "total_lesson_duration": 24
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/1K6qZ6n/course3.jpg",
+        "title": "Mobile App Development with Flutter",
+        "price": 79.99,
+        "rating": 4.9,
+        "description": "Master cross-platform app development using Flutter and Dart. Explore Flutter's versatile framework and Dart's efficiency. Create dynamic mobile applications compatible across multiple platforms with ease and proficiency.",
+        "number_of_lessons": 8,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Getting Started with Flutter"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "UI Design and Widgets"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "State Management"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "API Integration"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Local Database with SQLite"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Navigation and Routing"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Testing and Debugging"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Publishing to App Stores"
+            }
+        ],
+        "number_of_reviews": 4,
+        "total_lesson_duration": 16
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/rpQrr2V/blog2.jpg",
+        "title": "Digital Marketing Mastery",
+        "price": 69.99,
+        "rating": 4.5,
+        "description": "Unlock the realm of Digital Marketing Mastery. Delve into SEO, social media, analytics, and content strategies. Master the art of online campaigns, audience targeting, and data-driven tactics for unparalleled digital success.",
+        "number_of_lessons": 9,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Digital Marketing"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Search Engine Optimization (SEO)"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Social Media Marketing"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Pay-Per-Click (PPC) Advertising"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Email Marketing"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Content Marketing"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Analytics and Data Analysis"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Online Branding and Reputation Management"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Marketing Strategy Development"
+            }
+        ],
+        "number_of_reviews": 6,
+        "total_lesson_duration": 21
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/YDZvjvt/blog1.jpg",
+        "title": "Python Programming for Beginners",
+        "price": 49.99,
+        "rating": 4.8,
+        "description": "Discover the power of Python Programming for Beginners. Learn fundamental concepts, syntax, and logic in an easy-to-learn language. Build confidence through hands-on exercises, mastering key principles for creating practical applications and projects.",
+        "number_of_lessons": 6,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Python"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Python Syntax and Variables"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Control Flow and Loops"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Functions and Modules"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "File Handling and Exception Handling"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Mini Projects"
+            }
+        ],
+        "number_of_reviews": 4,
+        "total_lesson_duration": 12
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/NZwq9nn/course6.jpg",
+        "title": "Graphic Design Fundamentals",
+        "price": 59.99,
+        "rating": 4.6,
+        "description": "Dive into Graphic Design Fundamentals. Explore color theory, typography, layout, and software proficiency. Develop an eye for design principles and create impactful visuals, mastering the essential elements of graphic design for various media.",
+        "number_of_lessons": 7,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Graphic Design"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Design Tools and Software"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Color Theory and Typography"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Layout and Composition"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Image Editing and Manipulation"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Logo Design and Branding"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Portfolio Building"
+            }
+        ],
+        "number_of_reviews": 3,
+        "total_lesson_duration": 14
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/CtpTKMr/blog5.jpg",
+        "title": "Artificial Intelligence and Machine Learning",
+        "price": 139.99,
+        "rating": 4.9,
+        "description": "Explore the realm of Artificial Intelligence and Machine Learning. Dive into algorithms, neural networks, and data modeling. Master cutting-edge technologies to create intelligent systems and revolutionize industries through data-driven innovations.",
+        "number_of_lessons": 11,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to AI and ML"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Data Preprocessing and Feature Engineering"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Supervised Learning"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Unsupervised Learning"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Deep Learning and Neural Networks"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Natural Language Processing"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Reinforcement Learning"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "AI in Healthcare and Finance"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Final Project and Certification"
+            }
+        ],
+        "number_of_reviews": 7,
+        "total_lesson_duration": 20
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/1K6qZ6n/course3.jpg",
+        "title": "UI/UX Design for Mobile Apps",
+        "price": 69.99,
+        "rating": 4.7,
+        "description": "Learn UI/UX Design for Mobile Apps. Explore user-centric interfaces, wireframing, prototyping, and usability principles. Develop skills to create intuitive, visually appealing mobile experiences, mastering the art of design for optimal user engagement and satisfaction.",
+        "number_of_lessons": 9,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to UI/UX Design"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "User Research and Personas"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Wireframing and Prototyping"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "UI Design Principles"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Mobile App Design Guidelines"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Interactive Prototyping"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Usability Testing"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Design Tools and Software"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Portfolio Building and Showcase"
+            }
+        ],
+        "number_of_reviews": 5,
+        "total_lesson_duration": 18
+    },
+    {
+        "id": 9,
+        "image": "course_image_9.jpg",
+        "title": "Cybersecurity Essentials",
+        "price": 79.99,
+        "rating": 4.8,
+        "description": "Become a cybersecurity expert, learn ethical hacking, and secure digital assets.",
+        "number_of_lessons": 10,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Cybersecurity"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Network Security"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Web Application Security"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Ethical Hacking and Penetration Testing"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Malware Analysis and Prevention"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Security Compliance and Regulations"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Incident Response and Forensics"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "IoT and Cloud Security"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Final Project and Certification"
+            }
+        ],
+        "number_of_reviews": 6,
+        "total_lesson_duration": 20
+    },
+    {
+        "id": 10,
+        "image": "course_image_10.jpg",
+        "title": "Digital Photography and Photo Editing",
+        "price": 59.99,
+        "rating": 4.6,
+        "description": "Master the art of digital photography and post-processing with professional techniques.",
+        "number_of_lessons": 8,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Digital Photography"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Camera Operation and Settings"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Composition and Lighting"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Image Editing with Adobe Lightroom"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Advanced Editing and Retouching"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Portrait and Landscape Photography"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Portfolio Development"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Exhibition and Online Presence"
+            }
+        ],
+        "number_of_reviews": 4,
+        "total_lesson_duration": 16
+    },
+    {
+        "id": 11,
+        "image": "course_image_11.jpg",
+        "title": "Blockchain and Cryptocurrency Fundamentals",
+        "price": 89.99,
+        "rating": 4.7,
+        "description": "Explore the world of blockchain technology and cryptocurrency, including smart contracts and decentralized applications (DApps).",
+        "number_of_lessons": 10,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Blockchain"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Cryptocurrency and Wallets"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Smart Contracts and Solidity"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Decentralized Applications (DApps)"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Blockchain Security and Privacy"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Tokenomics and ICOs"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Blockchain in Supply Chain and Finance"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Use Cases and Industry Adoption"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Capstone Project"
+            },
+            {
+                "lesson_id": 10,
+                "lesson_title": "Future Trends and Opportunities"
+            }
+        ],
+        "number_of_reviews": 5,
+        "total_lesson_duration": 18
+    },
+    {
+        "id": 12,
+        "image": "course_image_12.jpg",
+        "title": "Creative Writing Workshop",
+        "price": 49.99,
+        "rating": 4.6,
+        "description": "Hone your creative writing skills, including fiction, non-fiction, and poetry writing, and get published.",
+        "number_of_lessons": 8,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Creative Writing"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Writing Fiction and Short Stories"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Non-Fiction and Essay Writing"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Poetry and Verse Composition"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Editing and Revising"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Getting Published and Self-Publishing"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Building a Writing Portfolio"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Writing Workshops and Feedback"
+            }
+        ],
+        "number_of_reviews": 3,
+        "total_lesson_duration": 14
+    },
+    {
+        "id": 13,
+        "image": "course_image_13.jpg",
+        "title": "E-Commerce Business Essentials",
+        "price": 69.99,
+        "rating": 4.8,
+        "description": "Start and grow a successful e-commerce business, from product sourcing to digital marketing strategies.",
+        "number_of_lessons": 9,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to E-Commerce"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Product Sourcing and Inventory Management"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Online Store Setup and Platforms"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Digital Marketing and SEO"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Social Media Advertising"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Payment Gateways and Security"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Customer Service and Retention"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Scaling and Growth Strategies"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Case Studies and Success Stories"
+            }
+        ],
+        "number_of_reviews": 6,
+        "total_lesson_duration": 18
+    },
+    {
+        "id": 14,
+        "image": "course_image_14.jpg",
+        "title": "Digital Music Production Masterclass",
+        "price": 79.99,
+        "rating": 4.9,
+        "description": "Learn music production, recording, mixing, and mastering with professional software and equipment.",
+        "number_of_lessons": 10,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Music Production"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "DAWs and MIDI Controllers"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Recording and Editing Audio"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Music Composition and Arrangement"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Mixing and Effects Processing"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Mastering and Finalization"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Sound Design and Synthesis"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Music Business and Distribution"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Collaborative Projects and Productions"
+            },
+            {
+                "lesson_id": 10,
+                "lesson_title": "Music Production Portfolio"
+            }
+        ],
+        "number_of_reviews": 7,
+        "total_lesson_duration": 20
+    },
+    {
+        "id": 15,
+        "image": "https://i.ibb.co/FzQ0090/blog9.jpg",
+        "title": "Meditation and Mindfulness for Stress Relief",
+        "price": 39.99,
+        "rating": 4.7,
+        "description": "Discover the benefits of meditation and mindfulness techniques for stress reduction and mental well-being.",
+        "number_of_lessons": 7,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Meditation"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Mindfulness and Breathing Exercises"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Meditation for Stress Relief"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Meditation for Better Sleep"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Body Scan and Progressive Relaxation"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Mindful Eating and Well-Being"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Daily Mindfulness Practices"
+            }
+        ],
+        "number_of_reviews": 4,
+        "total_lesson_duration": 12
+    },
+    {
+        "id": 16,
+        "image": "course_image_16.jpg",
+        "title": "Art History and Appreciation",
+        "price": 59.99,
+        "rating": 4.6,
+        "description": "Explore the rich history of art and learn to appreciate and analyze famous artworks from various periods.",
+        "number_of_lessons": 8,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Art History"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Ancient Art and Architecture"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Renaissance and Baroque Art"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Impressionism and Modern Art"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Contemporary and Digital Art"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Art Movements and Styles"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Artists and Their Masterpieces"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Art Critique and Interpretation"
+            }
+        ],
+        "number_of_reviews": 3,
+        "total_lesson_duration": 14
+    },
+    {
+        "id": 17,
+        "image": "https://i.ibb.co/yfFHXyd/blog4.jpg",
+        "title": "Financial Planning and Investment Strategies",
+        "price": 79.99,
+        "rating": 4.7,
+        "description": "Learn to manage your finances, create a budget, and make informed investment decisions for a secure future.",
+        "number_of_lessons": 9,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Personal Finance Basics"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Budgeting and Saving"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Investment Principles"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Stocks and Bonds"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Real Estate and Property Investment"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Retirement and Estate Planning"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Risk Management and Insurance"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Taxation and Financial Regulations"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Financial Planning Strategies"
+            }
+        ],
+        "number_of reviews": 5,
+        "total_lesson_duration": 18
+    },
+    {
+        "id": 18,
+        "image": "course_image_18.jpg",
+        "title": "Interior Design and Home Decor",
+        "price": 69.99,
+        "rating": 4.8,
+        "description": "Master the art of interior design and transform living spaces with creative home decor ideas and concepts.",
+        "number_of_lessons": 10,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Interior Design"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Color Theory and Psychology"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Furniture and Layout Planning"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Lighting and Fixture Selection"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Material and Texture Choices"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Budgeting and Project Management"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Sustainability and Green Design"
+            },
+            {
+                "lesson_id": 8,
+                "lesson_title": "Kitchen and Bathroom Design"
+            },
+            {
+                "lesson_id": 9,
+                "lesson_title": "Home Decor and Styling"
+            },
+            {
+                "lesson_id": 10,
+                "lesson_title": "Portfolio and Client Projects"
+            }
+        ],
+        "number_of_reviews": 6,
+        "total_lesson_duration": 20
+    },
+    {
+        "id": 19,
+        "image": "https://i.ibb.co/sCdjLN9/blog10.jpg",
+        "title": "Language Learning for Travelers",
+        "price": 49.99,
+        "rating": 4.8,
+        "description": "Learn essential phrases and language skills for travel to various destinations around the world.",
+        "number_of_lessons": 6,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Greetings and Basic Phrases"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Getting Around and Transportation"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Dining and Food Vocabulary"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Shopping and Bargaining"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Emergencies and Medical Phrases"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Cultural Insights and Travel Tips"
+            }
+        ],
+        "number_of_reviews": 4,
+        "total_lesson_duration": 12
+    },
+    {
+        "id": 20,
+        "image": "course_image_20.jpg",
+        "title": "Environmental Sustainability and Conservation",
+        "price": 59.99,
+        "rating": 4.7,
+        "description": "Explore environmental issues, conservation efforts, and sustainable practices for a greener future.",
+        "number_of_lessons": 7,
+        "lessons": [
+            {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Environmental Sustainability"
+            },
+            {
+                "lesson_id": 2,
+                "lesson_title": "Climate Change and Global Impact"
+            },
+            {
+                "lesson_id": 3,
+                "lesson_title": "Wildlife and Biodiversity Conservation"
+            },
+            {
+                "lesson_id": 4,
+                "lesson_title": "Sustainable Energy and Resources"
+            },
+            {
+                "lesson_id": 5,
+                "lesson_title": "Waste Management and Recycling"
+            },
+            {
+                "lesson_id": 6,
+                "lesson_title": "Community Engagement and Advocacy"
+            },
+            {
+                "lesson_id": 7,
+                "lesson_title": "Green Living and Lifestyle Changes"
+            }
+        ],
+        "number_of_reviews": 3,
+        "total_lesson_duration": 14
+    }
+]
