@@ -2,6 +2,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getStoredCourse, saveCourse } from '../utility/localStorage';
+import { Helmet } from 'react-helmet-async';
+
 
 const CourseDetails = () => {
     const details = useLoaderData()
@@ -20,6 +22,9 @@ const CourseDetails = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Course Detail Page</title>
+             </Helmet>
             <div className="bg-slate-950 px-[20px]">
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-5 py-10">

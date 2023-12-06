@@ -1,5 +1,6 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { AiFillLinkedin, AiOutlineWhatsApp, AiFillFacebook } from "react-icons/ai";
+import { Helmet } from 'react-helmet-async';
 const BlogDetails = () => {
     const details = useLoaderData()
     const { id } = useParams();
@@ -8,6 +9,9 @@ const BlogDetails = () => {
     const { image, title, short_description, long_description, publish_date, author } = detail
     return (
         <div>
+            <Helmet>
+                <title>Blog Detail Page</title>
+             </Helmet>
             <div className="bg-slate-950 px-[20px]">
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-5 py-10">

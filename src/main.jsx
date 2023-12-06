@@ -16,11 +16,14 @@ import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import Signin from './pages/Signin';
 import SignUp from './pages/SignUp';
+import { HelmetProvider } from 'react-helmet-async';
+import Error from './Error/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout />,
+    errorElement: <Error/>,
     children: [
       {
         path: '/',
@@ -32,46 +35,49 @@ const router = createBrowserRouter([
       },
       {
         path: '/course',
-        element: <AllCourse/>,
+        element: <AllCourse />,
       },
       {
         path: '/course/:id',
-        element: <CourseDetails/>,
+        element: <CourseDetails />,
         loader: () => fetch('/courses.json')
       },
       {
         path: '/blog',
-        element: <Blog/>,
+        element: <Blog />,
         loader: () => fetch('/blogs.json')
       },
       {
         path: '/blog/:id',
-        element: <BlogDetails/>,
+        element: <BlogDetails />,
         loader: () => fetch('/blogs.json')
       },
       {
         path: '/contact',
-        element: <Contact/>
+        element: <Contact />
       },
       {
         path: '/cart',
-        element: <Cart/>,
+        element: <Cart />,
         loader: () => fetch('/courses.json')
       },
       {
         path: '/signin',
-        element: <Signin/>
+        element: <Signin />
       },
       {
         path: '/signup',
-        element: <SignUp/>
+        element: <SignUp />
       }
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <HelmetProvider>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </HelmetProvider>
+
 )

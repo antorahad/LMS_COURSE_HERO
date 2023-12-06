@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 const SignUp = () => {
     return (
         <div className="py-[60px] px-[20px] min-h-screen flex items-center justify-center">
+            <Helmet>
+                <title>Sign Up Page</title>
+             </Helmet>
             <form className="bg-slate-50 p-5 rounded-[5px] max-w-2xl mx-auto">
                 <center>
                     <h1 className="text-[40px] font-[600] mb-3 text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text">Sign Up</h1>

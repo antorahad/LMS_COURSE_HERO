@@ -5,6 +5,7 @@ import { getStoredCourse, removeCourses } from "../utility/localStorage";
 import shoppingCart from '../assets/cart.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet-async';
 
 const Cart = () => {
     const allCourses = useLoaderData();
@@ -46,6 +47,9 @@ const Cart = () => {
 
     return (
         <div className="container mx-auto p-5">
+            <Helmet>
+                <title>Cart Page</title>
+             </Helmet>
             <h1 className="text-[40px] font-[600] mb-3">Shopping Cart</h1>
             <p className="text-[18px] font-[600]">{addedCourses.length} Course in Cart</p>
             <div>

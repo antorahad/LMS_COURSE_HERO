@@ -1,10 +1,14 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     return (
         <div className="py-[60px] px-[20px]">
+            <Helmet>
+                <title>Contact Page</title>
+             </Helmet>
             <center>
                 <h1 className="text-[40px] font-[600] text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text mb-3">Get In Touch</h1>
                 <p className="text-[16px] font-[400]">We provide our official address, email address and hotline number below.</p>
