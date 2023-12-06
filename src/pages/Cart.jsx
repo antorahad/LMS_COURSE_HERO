@@ -27,7 +27,7 @@ const Cart = () => {
             }
 
             setAddedCourses(courseAdded);
-            setTotalPrice(totalPriceSum); // Set the total price
+            setTotalPrice(totalPriceSum.toFixed(2)); // Set the total price with two decimal places
         }
     }, [allCourses.length]);
 
@@ -38,7 +38,7 @@ const Cart = () => {
     }
 
     const checkOut = () => {
-        toast("Purchased Successfull.")
+        toast.success("Purchase Successful.")
         removeCourses();
         setAddedCourses([]);
         setTotalPrice(0);
@@ -51,27 +51,29 @@ const Cart = () => {
             <div>
                 {
                     addedCourses.length > 0 ? (
-                        <div className="flex flex-col lg:flex-row justify-between gap-5">
-                            <div className="w-[100%] lg:w-1/2 space-y-4 mt-3">
-                                <div className="flex justify-end">
-                                    <button onClick={clearAll} className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Remove All</button>
+                        <div className="min-h-screen">
+                            <div className="flex flex-col lg:flex-row justify-between gap-5">
+                                <div className="w-[100%] lg:w-1/2 space-y-4 mt-3">
+                                    <div className="flex justify-end">
+                                        <button onClick={clearAll} className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Remove All</button>
+                                    </div>
+                                    <div className="grid grid-cols-1 gap-5">
+                                        {addedCourses.map(singleCartItem => <CartItem key={singleCartItem.id} singleCartItem={singleCartItem}></CartItem>)}
+                                    </div>
                                 </div>
-                                <div className="grid grid-cols-1 gap-5">
-                                    {addedCourses.map(singleCartItem => <CartItem key={singleCartItem.id} singleCartItem={singleCartItem}></CartItem>)}
-                                </div>
-                            </div>
-                            <div>
-                                <div className="flex flex-col justify-center gap-5 bg-slate-50 p-5 shadow-sm rounded-[5px]">
-                                    <h1 className="text-[30px] font-[600]">Billing Details</h1>
-                                    <p className="text-[16px] font-[400]">Total Course: {addedCourses.length}</p>
-                                    <p className="text-[16px] font-[400]">Total Price: ${totalPrice}</p>
-                                    <button onClick={checkOut} className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Check Out</button>
+                                <div>
+                                    <div className="flex flex-col justify-center gap-5 bg-slate-50 p-5 shadow-sm rounded-[5px]">
+                                        <h1 className="text-[30px] font-[600]">Billing Details</h1>
+                                        <p className="text-[16px] font-[400]">Total Course: {addedCourses.length}</p>
+                                        <p className="text-[16px] font-[400]">Total Price: ${totalPrice}</p>
+                                        <button onClick={checkOut} className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Check Out</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     ) : (
                         <div className="flex items-center justify-center min-h-screen">
-                            <img src={shoppingCart} className="w-[300px] h-[300px] mx-auto" alt="Shopping Cart" />
+                            <img src={shoppingCart} className="w-[420px] h-[420px] mx-auto" alt="Shopping Cart" />
                         </div>
                     )
                 }

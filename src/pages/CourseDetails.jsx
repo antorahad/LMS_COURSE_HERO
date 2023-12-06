@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveCourse } from '../utility/localStorage';
+import { getStoredCourse, saveCourse } from '../utility/localStorage';
 
 const CourseDetails = () => {
     const details = useLoaderData()
@@ -10,8 +10,13 @@ const CourseDetails = () => {
     const detail = details.find(singleDetails => singleDetails.id === idInt);
     const { image, title, description, rating, price, lessons, total_lesson_duration, number_of_reviews, number_of_lessons } = detail
     const handleAddCart = () => {
-        saveCourse(idInt);
-        toast("Course Added Successfully.")
+        const coursesInCart = getStoredCourse();
+        if (coursesInCart.includes(idInt)) {
+            toast.error("Already added to the cart.");
+        } else {
+            saveCourse(idInt);
+            toast.success("Course Added Successfully.");
+        }
     }
     return (
         <div>
