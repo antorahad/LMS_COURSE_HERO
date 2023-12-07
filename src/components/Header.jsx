@@ -68,8 +68,8 @@ const Header = () => {
                 </div>
                 <div className="flex lg:hidden items-center justify-center gap-5">
                     <div>
-                        <Link to={'/cart'}>
-                            <a><AiOutlineShoppingCart size={25} /></a>
+                        <Link to={'/signin'}>
+                            <a className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Sign In</a>
                         </Link>
                     </div>
                     <button onClick={() => { setToggle(!toggle) }} className="bg-gray-100 p-2 rounded-[5px] z-20 border-none outline-none">
@@ -84,48 +84,48 @@ const Header = () => {
                         toggle &&
                         <ul className='flex flex-col items-center justify-center text-[16px] font-[400] bg-white p-5 shadow-sm absolute z-10 top-0 left-0 w-full'>
                             <li className="py-3">
-                            <NavLink to={'/'} className=
-                                {({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-purple-400" : ""
-                                }>
-                                <a>Home</a>
-                            </NavLink>
+                                <NavLink to={'/'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-purple-400" : ""
+                                    }>
+                                    <a>Home</a>
+                                </NavLink>
                             </li>
                             <li className="py-3">
-                            <NavLink to={'/about'} className=
-                                {({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-purple-400" : ""
-                                }>
-                                <a>About</a>
-                            </NavLink>
+                                <NavLink to={'/about'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-purple-400" : ""
+                                    }>
+                                    <a>About</a>
+                                </NavLink>
                             </li>
                             <li className="py-3">
-                            <NavLink to={'/course'} className=
-                                {({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-purple-400" : ""
-                                }>
-                                <a>Course</a>
-                            </NavLink>
+                                <NavLink to={'/course'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-purple-400" : ""
+                                    }>
+                                    <a>Course</a>
+                                </NavLink>
                             </li>
                             <li className="py-3">
-                            <NavLink to={'/blog'} className=
-                                {({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-purple-400" : ""
-                                }>
-                                <a>Blog</a>
-                            </NavLink>
+                                <NavLink to={'/blog'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-purple-400" : ""
+                                    }>
+                                    <a>Blog</a>
+                                </NavLink>
                             </li>
                             <li className="py-3">
-                            <NavLink to={'/contact'} className=
-                                {({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-purple-400" : ""
-                                }>
-                                <a>Contact</a>
-                            </NavLink>
+                                <NavLink to={'/contact'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-purple-400" : ""
+                                    }>
+                                    <a>Contact</a>
+                                </NavLink>
                             </li>
                             <li className="py-3">
-                                <Link to={'/signin'}>
-                                    <a className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Sign In</a>
+                                <Link to={'/cart'}>
+                                    <a>Cart</a>
                                 </Link>
                             </li>
                         </ul>

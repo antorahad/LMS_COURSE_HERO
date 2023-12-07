@@ -24,7 +24,7 @@ const CourseDetails = () => {
         <div>
             <Helmet>
                 <title>Course Detail Page</title>
-             </Helmet>
+            </Helmet>
             <div className="bg-slate-950 px-[20px]">
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-5 py-10">
@@ -52,6 +52,7 @@ const CourseDetails = () => {
                 </div>
                 <div>
                     <div className="bg-slate-50 p-5 shadow-sm rounded-[5px] space-y-5">
+                        <h1 className="text-[30px] font-[600]">Course Details</h1>
                         <p className="text-[16px] font-[500]">Price: ${price} USD</p>
                         <p className="text-[16px] font-[500]">Duration: {total_lesson_duration} Hour</p>
                         <p className="text-[16px] font-[500]">Enrolled: {
