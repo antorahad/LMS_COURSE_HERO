@@ -1,3 +1,4 @@
+import { ImSpinner6 } from "react-icons/im";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useContext } from "react";
 import { Navigate, useLocation } from "react-router-dom";
@@ -7,7 +8,7 @@ const Private = ({ children }) => {
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
-                <span>Loading....</span>
+                <ImSpinner6 size={50}/>
             </div>
         )
     }
