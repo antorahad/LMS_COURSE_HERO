@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
     const { createUser } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleSignup = async (e) => {
         e.preventDefault();
@@ -37,6 +39,7 @@ const SignUp = () => {
             console.log(result.user);
             // Additional actions after successful sign-up (redirect, etc.)
             toast.success('Signed up successfully!');
+            navigate(location?.state ? location.state : '/');
         } catch (error) {
             console.error(error);
             toast.error('Error occurred during sign-up. Please try again.');

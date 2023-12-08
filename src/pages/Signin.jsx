@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { Helmet } from 'react-helmet-async';
 import { useContext, useState } from "react";
@@ -7,8 +7,20 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Signin = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignIn } = useContext(AuthContext);
     const [error, setError] = useState(null);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                console.log(result.user)
+                navigate(location?.state ? location.state : '/');
+                toast.success('Logged in successfully!');
+            })
+            .catch(error => console.log(error))
+    }
 
     const handleSignin = (e) => {
         e.preventDefault();
@@ -34,7 +46,7 @@ const Signin = () => {
                 console.log(result.user);
                 setError(null); // Reset error state
                 toast.success('Logged in successfully!'); // Display success message
-                // Additional actions after successful sign-in (redirect, etc.)
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 setError("Invalid email or password. Please try again.");
@@ -53,7 +65,7 @@ const Signin = () => {
                     <p className="max-w-md text-[14px] font-[400]">If you already have an account, sign in with your email and password.</p>
                 </center>
                 <div className="flex flex-col items-center justify-center gap-5 mt-[40px]">
-                    <button className="bg-gradient-to-r from-violet-300 to-purple-300 px-[35px] py-[12px] rounded-[5px] flex items-center justify-center gap-2 text-white text-[14px] font-[600] w-[80%] border-none outline-none">Continue With <FcGoogle size={20}></FcGoogle></button>
+                    <button onClick={handleGoogleSignIn} className="bg-gradient-to-r from-violet-300 to-purple-300 px-[35px] py-[12px] rounded-[5px] flex items-center justify-center gap-2 text-white text-[14px] font-[600] w-[80%] border-none outline-none">Continue With <FcGoogle size={20}></FcGoogle></button>
                     <p className="text-[16px] font-[600] text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text">Or</p>
                     <form onSubmit={handleSignin} className="flex flex-col items-center justify-center gap-5 w-[80%]">
                         <input type="email" name="email" placeholder="Enter Your Email" className="p-3 rounded-[5px] border-none outline-none w-[100%] mx-auto" />

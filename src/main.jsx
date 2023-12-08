@@ -19,6 +19,7 @@ import SignUp from './pages/SignUp';
 import { HelmetProvider } from 'react-helmet-async';
 import Error from './Error/Error';
 import AuthProvider from './Provider/AuthProvider';
+import Private from './Private/Private';
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/course/:id',
-        element: <CourseDetails />,
+        element: <Private><CourseDetails /></Private>,
         loader: () => fetch('/courses.json')
       },
       {
