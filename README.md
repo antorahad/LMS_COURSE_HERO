@@ -1,8 +1,16 @@
-# React + Vite
+# Course Hero LMS (https://course-hero-lms.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project detail: Course hero stands as the premier platform for selling courses, offering a vast array of educational resources and materials, catering to diverse learning needs and empowering countless learners globally.
+# Tools: React JS, Tailwind CSS, React Router, React Fast Marquee, React Tostify, React Icons and Firebase etc.
 
-Currently, two official plugins are available:
+# Features: 
+1 Premium UI
+2 Device responsive
+3 Dynamic course (Fetch by JSON data)
+4 Dynamic page routing
+5 Dedicated error page
+6 Private page routing
+7 Authentication
+8 Authentication validation
+9 Add to cart
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
