@@ -14,7 +14,7 @@ const Header = () => {
     };
 
     return (
-        <div className="bg-white shadow-sm">
+        <div className="bg-white shadow-sm px-5">
             <nav className="py-[30px] px-[25px] flex items-center justify-between">
                 <div>
                     <Link to={'/'}>
@@ -104,10 +104,6 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 <div className="flex lg:hidden items-center justify-center gap-5">
-                    <button onClick={() => { setToggle(!toggle) }} className="bg-gray-100 p-2 rounded-[5px] z-20 border-none outline-none">
-                        {toggle ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
-                    </button>
-
                     {/* User Authentication Section */}
                     {user ? (
                         <div className='relative'>
@@ -141,6 +137,9 @@ const Header = () => {
                             <a className="bg-gradient-to-r from-violet-300 to-purple-300 px-[28px] py-[12px] rounded-[5px] text-white text-[14px] font-[600] border-none outline-none">Sign In</a>
                         </Link>
                     )}
+                    <button onClick={() => { setToggle(!toggle) }} className="bg-gray-100 p-2 rounded-[5px] z-20 border-none outline-none">
+                        {toggle ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+                    </button>
                 </div>
 
                 {/* Mobile Menu Content */}

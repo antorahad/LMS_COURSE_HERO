@@ -36,7 +36,7 @@ const Signin = () => {
         // Basic email format validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            setError("Please enter a valid email address.");
+            toast.error("Please enter a valid email address.");
             return;
         }
 
@@ -45,11 +45,12 @@ const Signin = () => {
             .then(result => {
                 console.log(result.user);
                 setError(null); // Reset error state
-                toast.success('Logged in successfully!'); // Display success message
                 navigate(location?.state ? location.state : '/');
+                toast.success('Logged in successfully!'); // Display success message
             })
             .catch(error => {
                 setError("Invalid email or password. Please try again.");
+                toast.error(error.message); // Display error using toast
                 console.log(error);
             });
     };
@@ -71,11 +72,10 @@ const Signin = () => {
                         <input type="email" name="email" placeholder="Enter Your Email" className="p-3 rounded-[5px] border-none outline-none w-[100%] mx-auto" />
                         <input type="password" name="password" placeholder="Enter Your Password" className="p-3 rounded-[5px] border-none outline-none w-[100%] mx-auto" />
                         <button className="bg-gradient-to-r from-violet-300 to-purple-300 px-[35px] py-[12px] rounded-[5px] text-white text-[14px] font-[600]">Sign In</button>
-                        {error && <p className="text-red-500 text-[14px] font-[400]">{error}</p>}
-                        <ToastContainer /> {/* React Toastify container */}
-                        <p className="text-[14px] font-[400]">Do not have an account? <Link to={'/signup'} className="underline text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text">Sign Up</Link> here.</p>
                     </form>
+                    <p className="text-[14px] font-[400]">Do not have an account? <Link to={'/signup'} className="underline text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text">Sign Up</Link> here.</p>
                 </div>
+                <ToastContainer /> {/* React Toastify container */}
             </div>
         </div>
     );
