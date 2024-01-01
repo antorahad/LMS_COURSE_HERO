@@ -13,7 +13,7 @@ const BlogDetails = () => {
                 <title>Blog Detail Page</title>
              </Helmet>
             <div className="bg-slate-950 px-[20px]">
-                <div className="container mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-5 py-10">
                         <div className="space-y-6">
                             <h1 className="text-[40px] font-[600] text-white max-w-2xl">{title}</h1>
@@ -25,7 +25,7 @@ const BlogDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto px-[20px] py-[60px]">
+            <div className="max-w-7xl mx-auto px-[20px] py-[60px]">
                 <div className="space-y-4">
                     <p className="text-justify leading-relaxed">{long_description}</p>
                     <div className="flex flex-col gap-2">

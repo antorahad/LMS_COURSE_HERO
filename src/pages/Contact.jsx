@@ -13,7 +13,7 @@ const Contact = () => {
                 <h1 className="text-[40px] font-[600] text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text mb-3">Get In Touch</h1>
                 <p className="text-[16px] font-[400]">We provide our official address, email address and hotline number below.</p>
             </center>
-            <div className="mt-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto">
+            <div className="mt-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
                 <div className="w-[100%] bg-slate-50 shadow-sm flex flex-col gap-3 p-5 rounded-[5px]">
                     <div className="flex items-center justify-center w-[50px] h-[50px] bg-gradient-to-r from-violet-300 to-purple-300 text-white rounded-[5px]">
                         <FaLocationDot size={30} />

@@ -4,7 +4,7 @@ import banner from '../assets/image-three.png'
 const Banner = () => {
     return (
         <div className='bg-gradient-to-r from-violet-300 to-purple-300 px-[20px]'>
-            <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
                 <div>
                     <div className='py-5'>
                         <div className='bg-white rounded-[5px] shadow-sm p-5 space-y-3'>

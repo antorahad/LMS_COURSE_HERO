@@ -8,7 +8,7 @@ const Whyus = () => {
                 <h1 className="text-[40px] font-[600] text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text mb-3">Become A Hero</h1>
                 <p className="text-[16px] font-[400]">Start your journey with course hero and be the hero of your learning.</p>
             </center>
-            <div className="container mx-auto mt-[40px] flex flex-col lg:flex-row items-center justify-between gap-5">
+            <div className="max-w-7xl mx-auto mt-[40px] flex flex-col lg:flex-row items-center justify-between gap-5">
                 <div className='rounded-[10px] bg-gradient-to-r from-violet-300 to-purple-300'>
                     <img src={banner2} className="w-[100%] h-auto" />
                 </div>

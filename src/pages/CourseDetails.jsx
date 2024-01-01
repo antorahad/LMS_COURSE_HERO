@@ -26,7 +26,7 @@ const CourseDetails = () => {
                 <title>Course Detail Page</title>
             </Helmet>
             <div className="bg-slate-950 px-[20px]">
-                <div className="container mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-5 py-10">
                         <div className="space-y-6">
                             <h1 className="text-[40px] font-[600] text-white max-w-2xl">{title}</h1>

@@ -46,7 +46,7 @@ const Cart = () => {
     }
 
     return (
-        <div className="container mx-auto p-5">
+        <div className="max-w-7xl mx-auto p-5">
             <Helmet>
                 <title>Cart Page</title>
              </Helmet>

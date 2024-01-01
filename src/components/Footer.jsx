@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiOutlineWhatsApp, AiFillFacebook, AiFillInstagram, AiF
 const Footer = () => {
     return (
         <div className="bg-gradient-to-r from-violet-300 to-purple-300 text-white">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-10">
                 <div className="flex flex-col gap-3">
                     <h1 className="text-[25px] font-[600]">Course Hero</h1>
                     <p className="text-[14px] font-[400]">Learn New Skills Online With Top Instructors.</p>

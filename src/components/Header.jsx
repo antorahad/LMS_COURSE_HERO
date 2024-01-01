@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <div className="bg-white shadow-sm px-5">
-            <nav className="py-[30px] px-[25px] flex items-center justify-between">
+            <nav className="py-[30px] px-[25px] max-w-7xl mx-auto flex items-center justify-between">
                 <div>
                     <Link to={'/'}>
                         <a className="text-[25px] font-[600]">

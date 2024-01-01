@@ -7,7 +7,7 @@ const Testimonial = () => {
                 <h1 className="text-[40px] font-[600] text-transparent bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text mb-3">Success Stories of Our Heros</h1>
                 <p className="text-[16px] font-[400]">Here out the success stories of our heros.</p>
             </center>
-            <div className="mt-[40px] container mx-auto">
+            <div className="mt-[40px] max-w-7xl mx-auto">
                 <Marquee pauseOnClick={true} pauseOnHover={true} direction={"right"} speed={30}>
                     <div className="p-7 mx-5 bg-slate-50 shadow-sm rounded-[5px] w-[550px]">
                         <p className="text-justify">
